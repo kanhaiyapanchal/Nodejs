@@ -7,26 +7,25 @@ Node js setup step
 1.  <b>Install the npm:</b>
     - npm install
 
-2.  <b>setup .env file with variables:</b>
-    -# Server Post
-    -PORT = 7000
-    -# DATABASE connection 
-    -DATABASE = book_store
-    -DB_USERNAME = 
-    -PASSWORD = 
-    -DB_DIALECT = 
-    -DB_HOST = 
-    -# TOKEN JWT
-    -JWT_TOKEN = myStoreBookApi
-    -JWT_TOKEN_EXPIRESIN = 1h
-
-    -ADMIN_SECRET_KEY = theAdmin
+2.  <b>setup .env file with variables:</b><br>
+    -# Server Post<br>
+    -PORT = 7000<br>
+    -# DATABASE connection <br>
+    -DATABASE = book_store<br>
+    -DB_USERNAME = <br>
+    -PASSWORD = <br>
+    -DB_DIALECT = <br>
+    -DB_HOST = <br>
+    -# TOKEN JWT<br>
+    -JWT_TOKEN = myStoreBookApi<br>
+    -JWT_TOKEN_EXPIRESIN = 1h<br>
+    -ADMIN_SECRET_KEY = theAdmin<br>
 
 3.  <b>Create Database :</b>
-    - CREATE DATABASE book_store;
+    - CREATE DATABASE book_store;<br>
 
 4.  <b>Run Server for dev :</b>
-    - npm run dev
+    - npm run dev<br>
 
 
 <hr>
