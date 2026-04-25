@@ -1,0 +1,53 @@
+import { DataTypes } from "sequelize";
+import sequelize from "../config/connection.js";
+const orderAddress = sequelize.define('OrderAddress',{
+    address_id:{
+        type:DataTypes.INTEGER,
+        autoIncrement:true,
+        primaryKey:true
+    },
+    order_id:{
+        type:DataTypes.INTEGER,
+        allowNull:false,
+        references:{
+            model:'order',
+            key:'order_id'
+        }
+    },
+    full_name:{
+        type:DataTypes.STRING,
+        allowNull:false
+    },
+    phone_number:{
+        type:DataTypes.STRING,
+        allowNull:false
+    },
+    address_line1:{
+        type:DataTypes.STRING,
+        allowNull:false
+    },
+    address_line2:{
+        type:DataTypes.STRING,
+        allowNull:true
+    },
+    city:{
+        type:DataTypes.STRING,
+        allowNull:false
+    },
+    state_province:{
+        type:DataTypes.STRING,
+        allowNull:false
+    },
+    postal_code:{
+        type:DataTypes.STRING,
+        allowNull:false
+    },
+    country:{
+        type:DataTypes.STRING,
+        allowNull:false
+    },
+    address_type:{
+        type:DataTypes.ENUM('billing','shipping'),
+        allowNull:false
+    }
+})
